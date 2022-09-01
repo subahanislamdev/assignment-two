@@ -104,6 +104,23 @@ flex-direction: column;
     margin: 25px 0;
     font-weight: 700;
 }
+.tase-button button{
+ background-color:whitesmoke;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 7px;
+    font-weight: 700;
+    border: none;
+}
+.tase-button button:hover{
+    background-color: #51E1ED;
+    color: black;
+    border-radius: 5px;
+    padding: 5px 7px;
+    font-weight: 700;
+    border: none;
+
+}
 .blog{
     background-color: #DD0000;
     padding: 15px 80px;
