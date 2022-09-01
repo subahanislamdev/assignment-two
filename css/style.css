@@ -46,9 +46,15 @@ color: white;
 .link-button button{
 background-color: #DD0000;
 border-radius: 9px;
-    color: #FFFFFF;
-    padding: 18px 39px;
+color: #FFFFFF;
+padding: 18px 39px;
 }
+.link-button button:hover{
+    background-color: #CAD5E2;
+    border-radius: 9px;
+    color: #0D0D0D;
+    padding: 18px 39px;
+    }
 .team{
 display: flex;
 margin-top: 100px;
@@ -74,6 +80,14 @@ flex-direction: column;
     margin: 25px 0;
     font-weight: 700;
 }
+.upcome-match:hover{
+    background-color:skyblue;
+    padding: 15px 41px;
+    border-radius: 10px;
+    color: tomato;
+    margin: 25px 0;
+    font-weight: 700;
+}
 .all-group{
     background-color: white;
     padding: 15px 64px;
@@ -82,8 +96,24 @@ flex-direction: column;
     margin: 25px 0;
     font-weight: 700;
 }
+.all-group:hover{
+    background-color: #51E1ED;
+    padding: 15px 64px;
+    border-radius: 10px;
+    color: orange;
+    margin: 25px 0;
+    font-weight: 700;
+}
 .blog{
     background-color: #DD0000;
+    padding: 15px 80px;
+    border-radius: 10px;
+    color: black;
+    margin: 25px 0;
+    font-weight: 700;
+}
+.blog:hover{
+    background-color: white;
     padding: 15px 80px;
     border-radius: 10px;
     color: black;
@@ -138,27 +168,69 @@ padding: 0;
     padding: 0 10px 0 10px;
 }
 /* media query in responsive webside */
-
-@media screen and (max-width:576) {
+@media screen and (max-width:668px) {
+    
+    body{
+        padding: 0;
+        margin: 0;
+    }
     .banner{
-        width: 100%;
-        height: 100%;
+        background-color: rgb(149, 216, 194);
+        display: flex;
+        width: 668px;
+ 
+    }   
+    .mix-part{
+       display: flex;
+       flex-direction: column;
+
+       }
+    .text-part{
+          width: 50%;
+          left: 25px;
+          top:10px;
+          bottom: 1px;
+          height: 30%;
+          position: absolute;
     }
-   .mix-part{
-    grid-template-columns: repeat(1,1fr);
-   }
-    .team{
-      /* display: flex;
-      flex-direction: column; */
-      grid-template-columns: repeat(2,1fr);
-      height: 100%;
-      width: 100%;
+    .text-part h1{
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 25px;
     }
-    .lives{
-       display: grid;
+
+    .img-part img{
        width: 50%;
-       grid-template-columns: repeat(2,1fr);
-        height: 100%;
+       height: 20%;
+       position: absolute;
+       left: 15px;
+       top: 442px;
+   }
+
+
+    .team, .lives {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
     }
-   
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        width: 668px;
+    }
+    .con{
+        padding: 0 5px 0 5px;
+    }
+    .goals p{
+        padding: 0 2px 0 2px;
+    }
+    .mix-part{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
